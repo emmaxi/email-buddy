@@ -1,36 +1,13 @@
 const express = require('express'); //get access to express library
-const passport = require('passport');
-const GoogleStrategy = require('passport-google-oauth20').Strategy;
-const keys = require('./config/keys');
+require('./services/passport'); //passport config
 
+//authRoutes is a function since in authRoutes.js it uses module.exports and exports a function
+    // const authRoutes = require('./routes/authRoutes');  
+    // const app = express();
+    // authRoutes(app);
+// the above can be refact to the below
 const app = express();
-
-passport.use(
-    new GoogleStrategy(
-        {
-            clientID: keys.googleClientID,
-            clientSecret: keys.googleClientSecret,
-            callbackURL: '/auth/google/callback'
-        }, 
-        (accessToken, refreshToken, profile, done) => {
-            console.log('accessToken: ' + accessToken);
-            console.log('refreshToken: ' + refreshToken);
-            console.log('profile: ' + profile);
-        }
-    )
-);
-
-//route handler
-app.get(
-    '/auth/google', 
-    passport.authenticate('google', {  //'google' string means use the GoogleStategy
-        scope: ['profile', 'email']  // scope means the info we asked from google
-    })
-);
-
-app.get('/auth/google/callback', passport.authenticate('google'));
-
-
+require('./routes/authRoutes')(app);
 
 
 const PORT = process.env.PORT || 5000; //specific for Cloud9
