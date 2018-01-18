@@ -9,5 +9,9 @@ module.exports = (app) => {
         })
     );
     
+    app.get('/emma', function (req,res) {
+        res.send('For test purpose');
+    });
+   
     app.get('/auth/google/callback', passport.authenticate('google'));
 };
