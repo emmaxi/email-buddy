@@ -1,7 +1,7 @@
 const express = require('express'); //get access to express library
 require('./services/passport'); //passport config
 
-//authRoutes is a function since in authRoutes.js it uses module.exports and exports a function
+//authRoutes is a function since in authRoutes.js it uses module.exports and exports an arrow function
     // const authRoutes = require('./routes/authRoutes');  
     // const app = express();
     // authRoutes(app);

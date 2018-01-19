@@ -9,7 +9,7 @@ module.exports = (app) => {
         })
     );
     
-    app.get('/emma', function (req,res) {
+    app.get('/', function (req,res) {
         res.send('For test purpose');
     });
    
