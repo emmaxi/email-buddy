@@ -1,5 +1,7 @@
 const passport = require('passport');
 
+console.log("outside module");
+
 module.exports = (app) => {
     //route handler
     app.get(
@@ -11,6 +13,7 @@ module.exports = (app) => {
     
     app.get('/', function (req,res) {
         res.send('For test purpose');
+        console.log("log: for test purpose");
     });
    
     app.get('/auth/google/callback', passport.authenticate('google'));
