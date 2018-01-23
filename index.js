@@ -20,7 +20,6 @@ mongoose.connect(keys.mongoURI);
     // authRoutes(app);
 // the above can be refact to the below
 const app = express();
-require('./routes/authRoutes')(app);
 
 app.use(
     cookieSession({
@@ -30,6 +29,9 @@ app.use(
 );
 app.use(passport.initialize());
 app.use(passport.session());
+
+// router must run after session part, otherwise, get 'passport.initialize() middleware not in use' error
+require('./routes/authRoutes')(app);  
 
 
 const PORT = process.env.PORT || 5000; //specific for Cloud9
