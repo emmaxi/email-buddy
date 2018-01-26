@@ -13,7 +13,7 @@ passport.serializeUser((user, done) => {   //done is a callback
 
 passport.deserializeUser((id, done) => {
     User.findById(id).then (user => {
-        done(null, user); 
+        done(null, user);
     });
 });
 
@@ -23,23 +23,21 @@ passport.use(
         {
             clientID: keys.googleClientID,
             clientSecret: keys.googleClientSecret,
-            callbackURL: '/auth/google/callback'
-        }, 
+            callbackURL: '/auth/google/callback',
+            proxy: true
+        },
         (accessToken, refreshToken, profile, done) => {
-            console.log('profile.id: ' + profile.id);
-            console.log('profile.displayName: ' + profile.DisplayName);
-            
             User.findOne({googleId : profile.id})
                 .then((existingUser) => {
                     if (existingUser) {
                         done(null, existingUser);
                     } else {
                         new User({ googleId : profile.id})
-                        .save()
+                            .save()
                             .then(user => done(null, user));
                     }
                 });
-            
+
         }
     )
 );

@@ -33,9 +33,16 @@ app.use(passport.session());
 // router must run after session part, otherwise, get 'passport.initialize() middleware not in use' error
 require('./routes/authRoutes')(app);  
 
-
-const PORT = process.env.PORT || 5000; //specific for Cloud9
-//when works on Cloud9, your port is process.env.PORT
+const PORT = process.env.PORT || 5000;
 app.listen(PORT, function() {
-    console.log("APP is running on port " + process.env.PORT);
+    // console.log(process.env.IP);
+    // console.log(process.env.PORT);
+    console.log("server has started on: " + PORT);
 });
+
+
+// app.listen(8081, process.env.IP, function() {
+//     // console.log(process.env.IP);
+//     // console.log(process.env.PORT);
+//     console.log("server has started");
+// });
