@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 
 const cookieSession = require('cookie-session');
 const passport = require('passport');
-
+const bodyParser = require('body-parser');
 const keys = require('./config/keys.js');
 require('./models/User'); // should be execute before passport.js, otherwise, get error Schema hasn't been registered for model "users".
 require('./services/passport'); //passport config
@@ -21,6 +21,8 @@ mongoose.connect(keys.mongoURI);
 // the above can be refact to the below
 const app = express();
 
+//middlewares
+app.use(bodyParser.json());
 app.use(
     cookieSession({
         maxAge: 30 * 24 * 60 * 60 * 1000,  //milliseconds
@@ -31,7 +33,8 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 // router must run after session part, otherwise, get 'passport.initialize() middleware not in use' error
-require('./routes/authRoutes')(app);  
+require('./routes/authRoutes')(app);
+require('./routes/billingRoutes')(app);
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, function() {
