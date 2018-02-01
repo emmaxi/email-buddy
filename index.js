@@ -1,6 +1,5 @@
 const express = require('express'); //get access to express library
 const mongoose = require('mongoose');
-
 const cookieSession = require('cookie-session');
 const passport = require('passport');
 const bodyParser = require('body-parser');
@@ -14,12 +13,6 @@ require('./services/passport'); //passport config
 mongoose.connect(keys.mongoURI);
 
 
-
-//authRoutes is a function since in authRoutes.js it uses module.exports and exports an arrow function
-    // const authRoutes = require('./routes/authRoutes');  
-    // const app = express();
-    // authRoutes(app);
-// the above can be refact to the below
 const app = express();
 
 //middlewares
@@ -45,7 +38,7 @@ if (process.env.NODE_ENV === 'production') {
     //Express will serve up the index.html file if it doesn't recognize the route
     const path = require('path');
     app.get('*', (req, res) => {
-        res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
+        res.sendfile(path.resolve(__dirname, 'client', 'build', 'index.html'));
     });
 }
 
