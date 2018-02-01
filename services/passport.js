@@ -28,8 +28,6 @@ passport.use(
 
         }, 
         (accessToken, refreshToken, profile, done) => {
-            console.log('profile.id: ' + profile.id);
-            console.log('profile.displayName: ' + profile.DisplayName);
             User.findOne({googleId : profile.id})
                 .then((existingUser) => {
                     if (existingUser) {
