@@ -7,5 +7,7 @@ module.exports = {
     mongoURI: 'mongodb://Emma:Emma@ds263837.mlab.com:63837/email-buddy-dev',
     cookieKey: 'fasdfbajkldpe3ibpnfbpnmtyjuk7iubqreouyizxcvvmbn',
     stripePublishableKey: 'pk_test_pxcSU7LzyMbVQkkSmJJeyP2x',
-    stripeSecretKey: 'sk_test_xC5YsHHsI0hNo3VcpNxxgMDL'
+    stripeSecretKey: 'sk_test_xC5YsHHsI0hNo3VcpNxxgMDL',
+    sendGridKey: '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',
+    redirectDomain: 'http://localhost:3000'
 };

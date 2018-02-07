@@ -6,6 +6,7 @@ const bodyParser = require('body-parser');
 
 const keys = require('./config/keys.js');
 require('./models/User'); // should be execute before passport.js, otherwise, get error Schema hasn't been registered for model "users".
+require('./models/Survey');
 require('./services/passport'); //passport config
 
 
@@ -29,6 +30,7 @@ app.use(passport.session());
 // router must run after session part, otherwise, get 'passport.initialize() middleware not in use' error
 require('./routes/authRoutes')(app);
 require('./routes/billingRoutes')(app);
+require('./routes/surveyRoutes')(app);
 
 
 if (process.env.NODE_ENV === 'production') {
