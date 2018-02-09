@@ -1,0 +1,26 @@
+.LandingTitle {
+    background: url("./background1.jpg");
+    background-repeat: no-repeat;
+    height: 500%;
+    width: 100%;
+    background-size: cover;
+}
+
+.card {
+    margin-top: 0px !important;
+    height: 100%;
+}
+
+.title {
+    margin-top: 0px !important;
+    padding-top: 30px;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+}
+
+li {
+    padding-right: 15px;
+}
