@@ -2,20 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="715a63e1-5809-4525-b9af-664168364f42" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.c9/.nakignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.c9/metadata/tab0" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.c9/metadata/tab1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.c9/metadata/tab8" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.c9/metadata/workspace/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.c9/metadata/workspace/config/keys.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.c9/metadata/workspace/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.c9/metadata/workspace/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.c9/metadata/workspace/routes/authRoutes.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.c9/metadata/workspace/services/passport.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.c9/project.settings" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/components/Footer.js" afterPath="$PROJECT_DIR$/client/src/components/Footer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package-lock.json" afterPath="$PROJECT_DIR$/package-lock.json" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -31,17 +19,7 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Footer.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/src/components/Footer.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="335">
-              <caret line="50" column="0" lean-forward="true" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SECOND">
@@ -50,6 +28,16 @@
                 <folding />
               </first_editor>
               <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="package-lock.json" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/package-lock.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="280">
+              <caret line="3540" column="27" lean-forward="true" selection-start-line="3540" selection-start-column="27" selection-end-line="3540" selection-end-column="27" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -68,6 +56,7 @@
       <find>class</find>
       <find>background</find>
       <find>modern</find>
+      <find>uglify</find>
     </findStrings>
     <replaceStrings>
       <replace>className</replace>
@@ -130,6 +119,7 @@
         <option value="$PROJECT_DIR$/client/public/manifest.json" />
         <option value="$PROJECT_DIR$/client/src/components/Footer.js" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/package-lock.json" />
       </list>
     </option>
   </component>
@@ -433,15 +423,16 @@
       <workItem from="1517462925001" duration="6841000" />
       <workItem from="1517513127355" duration="3310000" />
       <workItem from="1517601282965" duration="26156000" />
-      <workItem from="1517977985317" duration="55172000" />
+      <workItem from="1517977985317" duration="55627000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="137698000" />
+    <option name="totallyTimeSpent" value="138153000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Debug Logs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -451,7 +442,7 @@
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2494043" sideWeight="0.50690335" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Execute Anonymous" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35890412" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27084988" sideWeight="0.49309665" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27084988" sideWeight="0.49309665" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2494043" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -504,13 +495,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="7" lean-forward="true" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/routes/users.js" />
     <entry file="file://$PROJECT_DIR$/client/.env.development">
       <provider selected="true" editor-type-id="text-editor">
@@ -916,6 +900,14 @@
             <folding />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package-lock.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="3540" column="27" lean-forward="true" selection-start-line="3540" selection-start-column="27" selection-end-line="3540" selection-end-column="27" />
+          <folding />
         </state>
       </provider>
     </entry>
