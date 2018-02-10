@@ -13,17 +13,18 @@ class Dashboard extends Component {
     renderDashboard()
     {
         if (this.props.surveys.length === 0) {
-            return <div>Emma</div>;
+            return (
+            <div className="col s12 center add-height valign-wrapper">
+                <div className="row">
+                    <h5 className="center-align grey-text">Time to create your first survey!</h5>
+                </div>
+            </div>
+            );
         } else {
             return (
                 <div className="container">
                     <br/>
                     <SurveyList />
-                    <div className="fixed-action-btn">
-                        <Link to="/surveys/new" className="btn-floating btn-large red">
-                            <i className="material-icons">add</i>
-                        </Link>
-                    </div>
                 </div>
 
             );
@@ -34,6 +35,11 @@ class Dashboard extends Component {
         return (
             <div>
                 {this.renderDashboard()}
+                <div className="fixed-action-btn">
+                    <Link to="/surveys/new" className="btn-floating btn-large red">
+                        <i className="material-icons">add</i>
+                    </Link>
+                </div>
             </div>
         );
     }
@@ -41,7 +47,6 @@ class Dashboard extends Component {
 
 
 function mapStateToProps(state) {
-    console.log(state.surveys);
     return { surveys: state.surveys };
 }
 

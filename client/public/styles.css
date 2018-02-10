@@ -24,3 +24,11 @@ ul {
 li {
     padding-right: 15px;
 }
+
+.add-height {
+    height: 800px;
+}
+
+.card {
+    border-radius : 10px !important;
+}

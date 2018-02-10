@@ -5,7 +5,7 @@ import React from 'react';
 export default ({ input, label, meta: { error, touched } }) => {
     return (
       <div>
-          <label>{label}</label>
+          <label><h5>{label}</h5></label>
           <input {...input}  style={{ marginBottom: '5px'}}/>
           {/*if touched is true, and error is not empty, render error message */}
           <div className="red-text" style={{ marginBottom: '20px' }}>
