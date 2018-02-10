@@ -12,7 +12,8 @@ An online platform that provide a quick and reliable way for company user to col
 
 You are free to download from Github and give it a shot. 
 
-Besides, you can also visit this website on [this link](https://serene-river-14310.herokuapp.com/)
+Besides, I've put this project on Heroku. 
+Please feel free to visit it on [this link](https://serene-river-14310.herokuapp.com/)
 
 
 ## Built With
