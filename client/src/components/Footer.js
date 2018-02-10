@@ -39,7 +39,7 @@ const Footer = () => {
         </div>
         <div className="footer-copyright black">
             <div className="container">
-                <a className="brown-text text-lighten-3" href="#">Made by Xi Wang</a>
+                <div className="brown-text text-lighten-3">Made by Xi Wang</div>
             </div>
         </div>
     </footer>

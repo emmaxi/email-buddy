@@ -1,22 +1,32 @@
+# Email Buddy
 
-     ,-----.,--.                  ,--. ,---.   ,--.,------.  ,------.
-    '  .--./|  | ,---. ,--.,--. ,-|  || o   \  |  ||  .-.  \ |  .---'
-    |  |    |  || .-. ||  ||  |' .-. |`..'  |  |  ||  |  \  :|  `--, 
-    '  '--'\|  |' '-' ''  ''  '\ `-' | .'  /   |  ||  '--'  /|  `---.
-     `-----'`--' `---'  `----'  `---'  `--'    `--'`-------' `------'
-    ----------------------------------------------------------------- 
+An online platform that provide a quick and reliable way for company user to collect the mass of their user's feedback.
+
+## Features
+* Easy Third party login: Google account
+* Safe payments: Use Stripe for online payment processing
+* Timely email delivery: Use SendGrid as to send and track the email and it's response.
 
 
-Welcome to your Node.js project on Cloud9 IDE!
+### Installing
 
-This chat example showcases how to use `socket.io` with a static `express` server.
+You are free to download from Github and give it a shot. 
 
-## Running the server
+Besides, you can also visit this website on [this link](https://serene-river-14310.herokuapp.com/)
 
-1) Open `server.js` and start the app by clicking on the "Run" button in the top menu.
 
-2) Alternatively you can launch the app from the Terminal:
+## Built With
+* [Gradle](https://gradle.org/) - Automation Build System
 
-    $ node server.js
 
-Once the server is running, open the project in the shape of 'https://projectname-username.c9users.io/'. As you enter your name, watch the Users list (on the left) update. Once you press Enter or Send, the message is shared with all connected clients.
+## Contact US
+* Email: emmaxi0720@gmail.com
+ 
+
+## Authors
+* **Xi Wang** - *Full stack Engineer* 
+
+
+## Acknowledgments
+* Materalize CSS example
+
