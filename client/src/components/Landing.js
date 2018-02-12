@@ -54,9 +54,13 @@ const Landing = () => {
               </div>
           </div>
 
-          <div className="parallax-container valign-wrapper">
-              <img src={background2} alt="Unsplashed background img 2"/>
-              <div className="section no-pad-bot">
+          <div className="parallax-container valign-wrapper row">
+              <img className="col s10"
+                   src={background2}
+                   alt="Unsplashed background img 2"
+                   style={{ padding: '0px'}}
+              />
+              <div className="section no-pad-bot col s2">
                   <div className="container">
                       <div className="row center">
                           <h5 className="header col s12 light">Get your work organized and efficient</h5>
@@ -67,15 +71,21 @@ const Landing = () => {
 
           <br/><br/>
 
-          <div className="parallax-container valign-wrapper">
-              <div className="section no-pad-bot">
+          <div className="parallax-container valign-wrapper row"
+               style={{ marginBottom: '0px'}}>
+              <div className="section no-pad-bot col s2">
                   <div className="container">
                       <div className="row center">
                           <h5 className="header col s12 light">Save your time to explore the nature</h5>
                       </div>
                   </div>
               </div>
-              <img src={background3} alt="Unsplashed background img 3"/>
+              <img
+                  className="col s10"
+                  src={background3}
+                  alt="Unsplashed background img 3"
+                  style={{ padding: '0px'}}
+              />
           </div>
       </div>
 

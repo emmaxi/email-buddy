@@ -14,22 +14,22 @@ const Footer = () => {
                     <ul>
                         <li>
                             <a className="white-text" href="https://www.linkedin.com/in/xi-wang-34984786/">
-                                <i class="fab fa-2x fa-linkedin"></i>
+                                <i className="fab fa-2x fa-linkedin"></i>
                             </a>
                         </li>
                         <li>
                             <a className="white-text" href="https://github.com/emmaxi">
-                                <i class="fab fa-2x fa-github"></i>
+                                <i className="fab fa-2x fa-github"></i>
                             </a>
                         </li>
                         <li>
                             <a className="white-text" href="https://www.instagram.com/emmapudding/?hl=en">
-                                <i class="fab fa-2x fa-instagram"></i>
+                                <i className="fab fa-2x fa-instagram"></i>
                             </a>
                         </li>
                         <li>
                             <a className="white-text" href="https://www.facebook.com/profile.php?id=100009074500432">
-                                <i class="fab fa-2x fa-facebook-square"></i>
+                                <i className="fab fa-2x fa-facebook-square"></i>
                             </a>
                         </li>
 

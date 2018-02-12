@@ -46,8 +46,6 @@ module.exports = app => {
                 }).exec();
             })
             .value();
-
-
         res.send({});
     });
 
